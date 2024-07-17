@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .invalid:invalid {
+    border: 2px dotted red;
+  }
+
+  .boxProp {
+    height: 450px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loading {
+    display: none;
+    font-style: italic;
+  }
