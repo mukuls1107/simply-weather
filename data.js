@@ -26,7 +26,8 @@ async function getWeatherReport(place) {
   );
 
   if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
+    // throw new Error(`HTTP error! status: ${response.status}`);
+    throw new Error(`Oops! An error might have occured. Please check if the location is correct. :)`)
   }
 
   const data = await response.json();
