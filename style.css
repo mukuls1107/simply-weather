@@ -17,11 +17,15 @@ form {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
 label {
   font-weight: bold;
   margin-right: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 input[type="text"] {
@@ -29,6 +33,8 @@ input[type="text"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-right: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
 }
 
 button {
@@ -39,6 +45,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 100%;
 }
 
 button:hover {
@@ -52,7 +59,8 @@ button:hover {
 .boxProp {
   height: auto;
   min-height: 450px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,12 +76,14 @@ button:hover {
   color: #333;
   margin: 10px 0;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .boxProp h4 {
   color: #666;
   margin: 5px 0 15px;
   text-align: center;
+  font-size: 1em;
 }
 
 .loading {
@@ -84,4 +94,31 @@ button:hover {
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    margin-right: 0;
+  }
+
+  .boxProp {
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .boxProp h1 {
+    font-size: 1.2em;
+  }
+
+  .boxProp h4 {
+    font-size: 0.9em;
+  }
 }

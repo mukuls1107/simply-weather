@@ -31,7 +31,7 @@ async function getWeatherReport(place) {
 
   const data = await response.json();
   return {
-    address: data.address,
+    address: data.resolvedAddress,
     description: data.description,
     timezone: data.timezone,
     maxTemp: data.days[0].tempmax,
