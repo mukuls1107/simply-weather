@@ -68,3 +68,4 @@ function updateUI(data) {
     <h1>Condition: ${data.condition}</h1>
   `;
 }
+
